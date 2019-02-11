@@ -1,0 +1,50 @@
+/* PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER*/
+
+.content-wrap{
+    font-family: $typoSecondary;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.content-hidden .welwel{
+	opacity: 0;
+	transform: translate3d(0, -30px, 0 );
+}
+
+.welwel{
+    display: block;
+    left: 0;
+    font-size: 1.875rem;
+    letter-spacing: 1px;
+	color: white;
+	opacity: 1;
+    transition: all 1s ease 1s;
+    text-align: center;
+}
+
+.enter-button {
+    left: 0;
+    text-align: center;
+	display: block;
+    font-size: 1rem;
+    letter-spacing: 1px;
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+	transition: all 1s ease 2s;
+	margin-top: 50px;
+	
+}
+
+.enter-button:hover{
+	border: none;
+}
+
+.content-hidden .enter-button {
+	opacity: 0;
+	transform: translate3d(0, -100px, 0 );
+}
+
+/* PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER*/

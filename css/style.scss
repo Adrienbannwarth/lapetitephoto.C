@@ -1,0 +1,334 @@
+// VARS
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// font
+.light {
+    font-weight: $light;
+}
+
+.normal {
+    font-weight: $normal;
+}
+
+.medium {
+    font-weight: $medium;
+}
+
+.semibold {
+    font-weight: $semibold;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+.extrabold {
+    font-weight: $extrabold;
+}
+
+.black {
+    font-weight: $black;
+}
+
+// colors
+$ccmain: #373333;
+$blanc: #ffffff;
+$yellow: #fcdc75;
+$scrollbar:$ccmain;
+// typo
+$typoMain: 'Aref Ruqaa',
+cursive;
+$typoSecondary: 'Montserrat',
+sans-serif;
+// TAILLE
+$h1: 3rem;
+$h2: 2rem;
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #efefef; //box-shadow: 0 0 8px rgba(0,0,0,.25) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scrollbar; //background: linear-gradient(to bottom,  #999 0%, #666 100%);
+    //box-shadow: 0 0 3px rgba(0,0,0,.25) inset;
+}
+
+@keyframes slidetamere {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1s;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    animation-name: slidetamere;
+    animation-duration: 3s;
+}
+
+.azert {
+    width: 100%;
+    height: 100Vh;
+    margin: 0;
+    background-color: black;
+    background: url(../part/img/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+/* HEADER   HEADER  HEADER  HEADER  HEADER  HEADER*/
+
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    margin-top: 30px;
+    color: $blanc;
+    z-index: 200;
+    font-family: $typoMain;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+
+    h1 a {
+        position: absolute;
+        left: 5%;
+        color: $blanc;
+        font-family: $typoSecondary;
+
+        &:hover {
+            color: $blanc;
+            text-decoration: none;
+        }
+    }
+
+    nav {
+        position: absolute;
+        right: 8%;
+
+        ul li {
+            padding: 0;
+            margin: 0;
+            display: inline;
+            margin: 0 15px 0 15px;
+
+            a {
+                text-decoration: none;
+                color: $blanc;
+            }
+
+            a:hover {
+                cursor: pointer;
+                text-decoration: none;
+                color: $blanc;
+                border-bottom: solid 3px $blanc;
+                animation-name: nike;
+                animation-duration: .3s;
+            }
+        }
+    }
+}
+
+@keyframes nike {
+    from {
+        padding-bottom: 12px;
+        opacity: .5;
+    }
+
+    to {
+        padding-bottom: 3px;
+        opacity: 1;
+    }
+}
+
+/* MENU BURGER EN DESSOUS DE 900 PX */
+
+.container {
+    visibility: hidden;
+    margin: 0 auto;
+    z-index: 1000;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    width: 100px !important;
+}
+
+.hamburger .line {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 10px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.line:nth-child(2) {
+    width: 30px;
+}
+
+.line:nth-child(3) {
+    width: 25px;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type {
+    margin-left: 0;
+}
+
+.hamburger .line:hover {
+    background-color: white;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger-7.is-active .line:nth-child(1) {
+    width: 30px;
+    background-color: $blanc;
+}
+
+#hamburger-7.is-active .line:nth-child(2) {
+    width: 40px;
+    background-color: $blanc;
+}
+
+#hamburger-7.is-active .line {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background-color: $blanc;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        visibility: hidden;
+    }
+
+    .container {
+        visibility: visible;
+    }
+
+    h1 a {
+        font-size: 1.5625rem;
+    }
+}
+
+.div-about {
+    position: fixed;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    z-index: 100;
+    top: 0;
+}
+
+/*MENU MOBILE  MENU MOBILE  MENU MOBILE */
+
+.menu-mobile {
+    z-index: 1000;
+    visibility: visible;
+    height: 100vh;
+    display: flex;
+    font-family: $typoMain;
+
+    .ul-mobile {
+        margin: auto;
+        font-size: 2rem;
+
+        .li-mobile {
+            text-align: center;
+            list-style: none;
+
+            .a-mobile {
+                color: $blanc;
+            }
+        }
+    }
+}
+
+/*FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER*/
+
+footer {
+    z-index: 100;
+
+    .logo {
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: flex;
+
+        .facebook {
+            width: 25px;
+            margin: auto;
+        }
+
+        .instagram {
+            width: 25px;
+            margin: auto;
+        }
+    }
+
+    .textfooter {
+        text-align: center;
+        margin-bottom: 100px;
+        font-family: $typoSecondary;
+    }
+
+    h3 a {
+        color: $ccmain;
+    }
+
+    h3 a:hover {
+        color: $ccmain;
+    }
+
+    .mentionlegale {
+        font-size: 0.5625rem;
+        margin-top: -80px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.logo .instagram {
+    fill: red;
+}
+
+
+
+//IMPORT PAGE SCSS 
+// IMPORT BOOTSTRAP SCSS
+@import "part/menu";
+@import "part/portrait";
+@import "part/model";
+@import "part/apropos";

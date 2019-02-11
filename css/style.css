@@ -1,0 +1,576 @@
+.light {
+  font-weight: 300; }
+
+.normal {
+  font-weight: 400; }
+
+.medium {
+  font-weight: 500; }
+
+.semibold {
+  font-weight: 600; }
+
+.bold {
+  font-weight: 700; }
+
+.extrabold {
+  font-weight: 800; }
+
+.black {
+  font-weight: 900; }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #efefef; }
+
+::-webkit-scrollbar-thumb {
+  background: #373333; }
+
+@keyframes slidetamere {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1s; } }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  animation-name: slidetamere;
+  animation-duration: 3s; }
+
+.azert {
+  width: 100%;
+  height: 100Vh;
+  margin: 0;
+  background-color: black;
+  background: url(../part/img/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+
+/* HEADER   HEADER  HEADER  HEADER  HEADER  HEADER*/
+header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  margin-top: 30px;
+  color: #ffffff;
+  z-index: 200;
+  font-family: "Aref Ruqaa", cursive;
+  font-size: 1.125rem;
+  letter-spacing: 1px; }
+  header h1 a {
+    position: absolute;
+    left: 5%;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif; }
+    header h1 a:hover {
+      color: #ffffff;
+      text-decoration: none; }
+  header nav {
+    position: absolute;
+    right: 8%; }
+    header nav ul li {
+      padding: 0;
+      margin: 0;
+      display: inline;
+      margin: 0 15px 0 15px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #ffffff; }
+      header nav ul li a:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: #ffffff;
+        border-bottom: solid 3px #ffffff;
+        animation-name: nike;
+        animation-duration: .3s; }
+
+@keyframes nike {
+  from {
+    padding-bottom: 12px;
+    opacity: .5; }
+  to {
+    padding-bottom: 3px;
+    opacity: 1; } }
+
+/* MENU BURGER EN DESSOUS DE 900 PX */
+.container {
+  visibility: hidden;
+  margin: 0 auto;
+  z-index: 1000;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  width: 100px !important; }
+
+.hamburger .line {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.line:nth-child(2) {
+  width: 30px; }
+
+.line:nth-child(3) {
+  width: 25px; }
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
+
+.col:first-of-type {
+  margin-left: 0; }
+
+.hamburger .line:hover {
+  background-color: white; }
+
+.hamburger:hover {
+  cursor: pointer; }
+
+#hamburger-7.is-active .line:nth-child(1) {
+  width: 30px;
+  background-color: #ffffff; }
+
+#hamburger-7.is-active .line:nth-child(2) {
+  width: 40px;
+  background-color: #ffffff; }
+
+#hamburger-7.is-active .line {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+  background-color: #ffffff; }
+
+@media screen and (max-width: 800px) {
+  nav {
+    visibility: hidden; }
+  .container {
+    visibility: visible; }
+  h1 a {
+    font-size: 1.5625rem; } }
+
+.div-about {
+  position: fixed;
+  background: black;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 100;
+  top: 0; }
+
+/*MENU MOBILE  MENU MOBILE  MENU MOBILE */
+.menu-mobile {
+  z-index: 1000;
+  visibility: visible;
+  height: 100vh;
+  display: flex;
+  font-family: "Aref Ruqaa", cursive; }
+  .menu-mobile .ul-mobile {
+    margin: auto;
+    font-size: 2rem; }
+    .menu-mobile .ul-mobile .li-mobile {
+      text-align: center;
+      list-style: none; }
+      .menu-mobile .ul-mobile .li-mobile .a-mobile {
+        color: #ffffff; }
+
+/*FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER*/
+footer {
+  z-index: 100; }
+  footer .logo {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex; }
+    footer .logo .facebook {
+      width: 25px;
+      margin: auto; }
+    footer .logo .instagram {
+      width: 25px;
+      margin: auto; }
+  footer .textfooter {
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: "Montserrat", sans-serif; }
+  footer h3 a {
+    color: #373333; }
+  footer h3 a:hover {
+    color: #373333; }
+  footer .mentionlegale {
+    font-size: 0.5625rem;
+    margin-top: -80px;
+    width: 100%;
+    text-align: center; }
+
+.logo .instagram {
+  fill: red; }
+
+/* PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER*/
+.content-wrap {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0); }
+
+.content-hidden .welwel {
+  opacity: 0;
+  transform: translate3d(0, -30px, 0); }
+
+.welwel {
+  display: block;
+  left: 0;
+  font-size: 1.875rem;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
+  transition: all 1s ease 1s;
+  text-align: center; }
+
+.enter-button {
+  left: 0;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  transition: all 1s ease 2s;
+  margin-top: 50px; }
+
+.enter-button:hover {
+  border: none; }
+
+.content-hidden .enter-button {
+  opacity: 0;
+  transform: translate3d(0, -100px, 0); }
+
+/* PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER  PRELOADER*/
+.baniere {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  top: 0; }
+
+/* BANIERE DE LA PAGE PAYSAGE*/
+.p-baniere {
+  background-image: url("../part/img/baniere-paysage.jpg"); }
+
+/* BANIERE DE LA PAGE PORTRAITS*/
+.portrait-baniere {
+  background-image: url("../part/img/baniere.jpg"); }
+
+/* BANIERE DE LA PAGE MATERNITE*/
+.m-baniere {
+  background-image: url("../part/img/baniere-maternite.jpg"); }
+
+.all {
+  margin-top: 350px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  width: 100%; }
+  .all .menu-portrait {
+    max-width: 1200px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto; }
+    .all .menu-portrait .image-menu-portrait {
+      width: 32%;
+      position: relative;
+      height: 550px; }
+      .all .menu-portrait .image-menu-portrait .linkkk {
+        width: 100%;
+        height: 100%; }
+      .all .menu-portrait .image-menu-portrait .link-portrait {
+        padding: 5px 20px 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        left: 40%;
+        top: 80%;
+        color: #373333;
+        background-color: #ffffff;
+        font-family: "Aref Ruqaa", cursive;
+        letter-spacing: 3px;
+        transform: skewX(-10deg) translate3D(0, 0, 0); }
+    .all .menu-portrait .img-one {
+      background-image: url("../part/img/qqq.jpg");
+      background-size: cover;
+      background-size: 100%;
+      transition: 1s;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .all .menu-portrait .img-one:hover {
+      background-size: 120%; }
+    .all .menu-portrait .img-two {
+      background-image: url("../part/img/menu-3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 110%;
+      transition: 1s;
+      background-position: center; }
+    .all .menu-portrait .img-two:hover {
+      background-size: 130%; }
+    .all .menu-portrait .img-three {
+      background-image: url("../part/img/menu-2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 110%;
+      transition: 1s;
+      background-position: center; }
+    .all .menu-portrait .img-three:hover {
+      background-size: 130%; }
+  .all .description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif; }
+  .all .masonry {
+    /* Masonry container */
+    column-count: 3;
+    column-gap: 5px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .all .masonry .item {
+      /* Masonry bricks or child elements */
+      background-color: #eee;
+      display: inline-block;
+      margin: 0 0 5px;
+      width: 100%;
+      transition: 1.2s; }
+    .all .masonry .item:hover {
+      filter: opacity(0.4); }
+
+@media screen and (max-width: 1000px) {
+  .all .menu-portrait .image-menu-portrait .link-portrait {
+    top: 60%;
+    left: 35%;
+    font-size: 0.75rem; }
+  .all .menu-portrait {
+    height: 450px; }
+  .all .menu-portrait .image-menu-portrait {
+    height: 400px; } }
+
+@media screen and (max-width: 800px) {
+  .all .masonry {
+    column-count: 2; }
+  .all .menu-portrait {
+    height: 350px; }
+  .all .menu-portrait .image-menu-portrait {
+    height: 300px; } }
+
+@media screen and (max-width: 600px) {
+  .all {
+    margin-top: 250px; }
+    .all .masonry {
+      column-count: 1; }
+  .all .menu-portrait {
+    height: 300px; }
+  .all .menu-portrait .image-menu-portrait .link-portrait {
+    top: 60%;
+    left: 30%;
+    font-size: 0.625rem; }
+  .all .menu-portrait .image-menu-portrait {
+    height: 250px; } }
+
+@media screen and (max-width: 400px) {
+  .all {
+    margin-top: 130px; }
+  .all .menu-portrait {
+    height: 210px; }
+  .all .menu-portrait .image-menu-portrait .link-portrait {
+    top: 60%;
+    left: 20%;
+    font-size: 0.5rem; }
+  .all .menu-portrait .image-menu-portrait {
+    height: 180px; } }
+
+.h1projet a {
+  color: #373333;
+  font-family: "Montserrat", sans-serif; }
+
+.h1projet a:hover {
+  color: #373333; }
+
+.back {
+  width: 60px;
+  height: 60px;
+  right: 5%;
+  position: absolute;
+  cursor: pointer;
+  transition: .8s; }
+  .back:hover {
+    width: 70px;
+    height: 70px; }
+
+.masonry {
+  /* Masonry container */
+  column-count: 2;
+  column-gap: 5px;
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .masonry .item {
+    /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 5px;
+    width: 100%;
+    transition: 1.2s; }
+
+/* MISE EN PAGE IMG DES PAGES DETAIL MANNEQUIN */
+.f {
+  width: 500px;
+  display: flex;
+  left: 50%;
+  justify-content: space-around;
+  margin-left: 30%;
+  margin-top: 200px;
+  margin-bottom: 100px; }
+  .f p {
+    font-family: "Aref Ruqaa", cursive; }
+  .f span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    margin-left: 10px; }
+
+@media screen and (max-width: 800px) {
+  .f {
+    width: 300px;
+    margin-left: 25%; } }
+
+@media screen and (max-width: 600px) {
+  .masonry {
+    /* Masonry container */
+    column-count: 1;
+    column-gap: 5px;
+    max-width: 1100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .f {
+    margin-left: 25%; } }
+
+@media screen and (max-width: 400px) {
+  .f {
+    width: 200px;
+    font-size: 0.9rem; }
+  .f span {
+    font-size: 0.9rem;
+    margin-right: 10px; } }
+
+.apropos-clara {
+  display: flex;
+  flex-wrap: wrap; }
+  .apropos-clara .description-clara {
+    height: 100vh;
+    width: 50%; }
+    .apropos-clara .description-clara .description-titre-clara {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      margin: 100px 0px 50px 0px; }
+    .apropos-clara .description-clara .text-descriptif {
+      color: #373333;
+      text-align: center;
+      font-family: "Aref Ruqaa", cursive;
+      font-size: 1.25rem;
+      margin: 20px 50px 0px 50px;
+      word-spacing: 4px;
+      justify-content: baseline;
+      line-height: 30px; }
+    @media screen and (max-width: 1200px) {
+      .apropos-clara .description-clara .text-descriptif {
+        font-size: 1rem; } }
+    .apropos-clara .description-clara .parent-social {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      margin-top: 50px; }
+      .apropos-clara .description-clara .parent-social .untitle-social {
+        text-align: center;
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-weight: 500;
+        margin: auto;
+        height: 32px;
+        color: #373333;
+        font-family: "Montserrat", sans-serif;
+        width: 150px; }
+  .apropos-clara .dridri {
+    font-family: "Aref Ruqaa", cursive;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    margin: 0px 0px 0px 50px;
+    padding-bottom: 15px; }
+    .apropos-clara .dridri .span {
+      font-family: "Montserrat", sans-serif;
+      margin-left: 10px;
+      cursor: pointer;
+      color: #373333;
+      letter-spacing: 3px;
+      font-size: 0.8rem; }
+  .apropos-clara .photo-clara {
+    width: 50%;
+    height: 100vh;
+    float: right;
+    background-image: url("../part/img/clara-profil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .8s;
+    background-position: center;
+    background-size: 100%; }
+    .apropos-clara .photo-clara:hover {
+      background-size: 110%; }
+
+@media screen and (max-width: 1000px) {
+  .apropos-clara {
+    flex-direction: column-reverse; }
+  .apropos-clara .description-clara {
+    width: 100%;
+    height: 55vh; }
+  .apropos-clara .photo-clara {
+    width: 100%;
+    height: 45vh; }
+  .apropos-clara .description-clara .description-titre-clara {
+    margin: 20px 0px 20px 0px; }
+  .apropos-clara .description-clara .parent-social {
+    margin-top: 20px; } }
+
+@media screen and (max-width: 800px) {
+  .apropos-clara .description-clara .parent-social {
+    margin-bottom: 50px; } }
+
+@media screen and (max-width: 800px) {
+  .parent-social .untitle-social {
+    font-size: 0.75rem; } }
+
+.about-logo {
+  width: 20px; }
